@@ -1,0 +1,14 @@
+package student.additionallanguagefeatures;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class Varargstest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

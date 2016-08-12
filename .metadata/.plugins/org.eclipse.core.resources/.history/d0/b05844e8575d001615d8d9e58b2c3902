@@ -1,0 +1,44 @@
+package student.opflow;
+
+import java.util.*;
+public class Program {
+
+	public static void main(String[] args) {
+
+		// Write your code here, to explore the use of operators and flow
+		// control.
+		
+		int year;
+		String input ;
+		Scanner sc = new Scanner(System.in);
+		boolean exit = false;
+		while(!exit)
+		{
+			System.out.println("Enter a year");
+			year =sc.nextInt();
+			System.out.println("year" + year + "is leap:" + isLeapYear(year));
+			System.out.println("Do you wish to continue? Yes or No");
+			input = sc.next().toUpperCase();
+			if(input.equals("YES"))
+			{
+				exit = true;
+			}
+		
+			
+		}
+		
+
+		
+	}
+	
+	public static boolean isLeapYear(int year)
+	{
+		
+		boolean islpyr = false;
+		if( (year%4 == 0 & year%100 !=0) || year %400 == 0 )
+		{
+			return true;
+		}
+		return islpyr;
+	}
+}

@@ -1,0 +1,7 @@
+package student.interfaces;
+
+public class ReservableBook extends Book implements Reservable {
+	
+	
+
+}

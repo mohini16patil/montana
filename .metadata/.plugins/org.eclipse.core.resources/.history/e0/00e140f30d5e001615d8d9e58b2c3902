@@ -1,0 +1,20 @@
+package student.classes;
+
+import static org.junit.Assert.*;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+
+public class emptest {
+
+	@Test
+	public void testBonus() {
+		
+		Employee emp1 = new Employee("Eas",9000);
+		emp1.payBonus();
+		Assert.assertEquals(9000*1.01, emp1.getSalary());
+	}
+	
+
+}

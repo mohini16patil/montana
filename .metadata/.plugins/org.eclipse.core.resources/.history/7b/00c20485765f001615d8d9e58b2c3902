@@ -1,0 +1,27 @@
+package student.interfaces;
+
+public class ReservableBook extends Book implements Reservable {
+	
+
+
+	@Override
+	public boolean isReserver() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean canBeReservedFor(Member mem) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean reserveItemFor(Member mem) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	
+
+}

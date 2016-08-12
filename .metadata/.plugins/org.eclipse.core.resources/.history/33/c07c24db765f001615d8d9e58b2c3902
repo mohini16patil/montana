@@ -1,0 +1,13 @@
+package student.interfaces;
+
+public interface Reservable {
+	
+	boolean isReserver();
+	
+	boolean canBeReservedFor(Member mem);
+	
+	boolean reserveItemFor(Member mem);
+	
+	
+
+}

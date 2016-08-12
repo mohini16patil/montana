@@ -1,0 +1,15 @@
+package student.opflow;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class Testleapyear {
+
+	@Test
+	public void testIsNotDivisibleByFour() {
+		Program.isLeapYear(2015);
+		fail("Not yet implemented");
+	}
+
+}

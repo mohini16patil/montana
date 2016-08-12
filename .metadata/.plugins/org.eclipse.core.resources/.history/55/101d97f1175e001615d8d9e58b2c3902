@@ -1,0 +1,23 @@
+package student.arrays;
+import java.util.*;
+public class ArrayOfPrimitives {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		// Write code here, to create and use an array of primitives.
+		int [] array = new int[sc.nextInt()];
+		int sum = 0; 
+		int positive = 0;
+		for (int i=0;i < array.length;i++)
+		{
+			System.out.println("Enter element 0:");
+			array[i] = sc.nextInt();
+			sum += Math.max(array[i], 0);
+			if(array[i]>0)
+				positive++;
+			
+		}
+		
+		
+	}
+}

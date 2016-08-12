@@ -1,0 +1,15 @@
+
+
+public class KnightTest {
+	
+	public static void main(String [] args)
+	{
+		
+	}
+	
+	public void solve()
+	{
+		Board b = new Board(8,8);
+		
+	}
+}

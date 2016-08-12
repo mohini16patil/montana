@@ -1,0 +1,28 @@
+package student.additionallanguagefeatures;
+
+public class UseEmployee {
+
+	public static void main(String[] args) {
+		
+		Employee.setStatutorySalary(8000);
+
+		// Write code to test your Employee class here.
+		Employee e = new Employee("Eashan", 120,ContractType.FT);
+		String [] skills = {"Web-Dev","Backend-Dev"};
+		e.setSkills(skills);
+		Employee e1 = new Employee("Varad", ContractType.PT);
+		
+		
+		e.payRise(1000);
+		e.payBonus();
+		e1.payBonus(5);
+		
+		e.empToString();
+		e.printSkills();
+		e.printContractType();
+		System.out.println("");
+		e1.empToString();
+
+	}
+
+}

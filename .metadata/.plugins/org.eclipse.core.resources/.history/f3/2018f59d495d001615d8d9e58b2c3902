@@ -1,0 +1,28 @@
+package student.opflow;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		// Write your code here, to explore the use of operators and flow
+		// control.
+		
+		int year =  2015;
+		boolean isLeapYear = false;
+		System.out.println("year" + year + "is leap:"+isLeapYear);
+		
+
+		
+	}
+	
+	public static boolean isLeapYear(int year)
+	{
+		
+		boolean isleapyear = false;
+		if(year%4 == 0 || year %100 == 0)
+		{
+			return true;
+		}
+		return isleapyear;
+	}
+}

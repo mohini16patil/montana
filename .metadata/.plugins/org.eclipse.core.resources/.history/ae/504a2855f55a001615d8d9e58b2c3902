@@ -1,0 +1,24 @@
+package student.javalang;
+
+import java.util.*;
+
+public class main {
+
+	public static void main(String[] args)
+	{
+		Scanner sc =new Scanner(System.in);
+		//Employee details
+		
+		System.out.println("Enter an employee's name and his salary");
+		String Employee = sc.nextLine();
+		int salary = sc.nextInt();
+		System.out.println("Hello"+Employee+" Your salary is "+salary);
+		//Colleague's details
+		
+		System.out.println("Enter your colleague's name and his salary");
+		String Employee2 = sc.nextLine();
+		int salary2 = sc.nextInt();		
+		sc.close();
+
+	}
+}

@@ -1,0 +1,33 @@
+package student.additionallanguagefeatures;
+
+import java.util.ArrayList;
+public class AutoBoxingUnboxing {
+
+	public static void main(String[] args) {
+		
+		int primitive = 42;
+		Integer obj = primitive;
+
+		System.out.println(obj);
+		
+		ArrayList<Integer> obj1 = new ArrayList<Integer>();
+		obj1.add(obj);
+		obj1.add(primitive);
+		obj1.add(100);
+		
+		int temp;
+		for ( Integer i: obj1)
+		{
+			temp = i;
+			System.out.println("Integer"+i);
+			System.out.println("Int"+temp);
+			
+		}
+		
+
+		
+		// Write your code here, to explore the use of autoboxing and unboxing.
+
+
+	}
+}

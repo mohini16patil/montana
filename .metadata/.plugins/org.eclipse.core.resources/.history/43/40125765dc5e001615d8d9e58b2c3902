@@ -1,0 +1,8 @@
+package student.inhertance;
+
+// Define your Book class here, as a subclass of Item.
+
+public class Book extends Item{
+	int isbn;
+	Genre genre;
+}

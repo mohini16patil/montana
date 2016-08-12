@@ -1,0 +1,16 @@
+package student.javalang;
+
+import java.util.*;
+public class Optional {
+
+	public static void main(String [] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		int i=sc.nextInt();
+		i&= i-1;
+		System.out.println(i);
+		
+	}
+	
+	
+}

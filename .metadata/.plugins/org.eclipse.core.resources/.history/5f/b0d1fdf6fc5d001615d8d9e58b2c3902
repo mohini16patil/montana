@@ -1,0 +1,13 @@
+package student.classes;
+
+public class UseEmployee {
+
+	public static void main(String[] args) {
+		
+		// Write code to test your Employee class here.
+		Employee e = new Employee("Eashan", 1200000);
+		e.EMPtoString();
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package student.inhertance;
+
+import java.util.Date;
+// Define your Item class here, as an abstract class.
+
+public abstract class Item{
+	
+	private String Title;
+	private Date dateBorrowed;
+	private Member currentBorrower;
+	
+	Item(String Title){
+		this.Title = Title;
+		this.dateBorrowed = null;
+		this.currentBorrower = null;
+	}
+	
+	public boolean isBorrowed()
+	{
+		return (this.currentBorrower == null);
+	}
+	
+	public boolean canBeBorrowedBy(Member mem)
+	{
+		return true;
+	}
+}

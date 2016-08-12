@@ -1,0 +1,63 @@
+package student.classes;
+
+import java.util.*;
+// Write your Employee class here.
+
+public class Employee {
+
+	private String name;
+	private Long salary;
+	private Date joiningDate;
+	private static long statutorySalary;
+
+	Employee(String name) {
+		this(name, statutorySalary);
+	}
+
+	Employee(String name, long salary) {
+		setName(name);
+		setSalary(salary);
+		this.joiningDate = new Date();
+	}
+
+	public static void setStatutorySalary(long ssalary) {
+		statutorySalary = ssalary;
+	}
+
+	public static long getStatutorySalary() {
+		return statutorySalary;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setSalary(long salary) {
+		this.salary = salary;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public long getSalary() {
+		return this.salary;
+	}
+	
+	public void payRise(long rise)
+	{
+		this.salary+=rise;
+	}
+	
+	public void payBonus()
+	{
+		this.salary = this.salary *(long) 1.01;
+	}
+	public void empToString() {
+		System.out.println("Employee Name :" + this.name);
+		System.out.println("Employee Salary:" + this.salary);
+		System.out.println("Employee Joining Date :" + this.joiningDate);
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package student.additionallanguagefeatures;
+
+public class Varargs {
+
+	public static void main(String[] args) {
+
+		// Write your code here, to explore the use of variable-argument-list methods.
+		
+		System.out.println("SUm is :"+ sum(2, 4,8) );
+		
+	}
+	public static double sum(double a,double... b )
+	{
+		double sum = a;
+		
+		for(double el: b)
+		{
+			sum+=el;
+		}
+		
+		return sum;
+	}
+
+}

@@ -1,0 +1,51 @@
+package student.methodcalls;
+
+public class Person {
+	
+	// static variable to keep count of number of person objects created.
+	// Use this in exercise 2. 
+	private static int personCount;
+	
+	// TODO Declare variables to hold the name and age of a Person
+	private int age;
+	private String name;
+	// TODO Write a method to return the name of this person	
+	public String getName()
+	{
+		return this.Name;
+	}
+	// TODO Write a method to return the age of this person
+	public int getAge(){
+		return this.age;
+	}
+	// TODO Write a method to set both the name and the age of this person
+	public void setNameAge(String name, int age)
+	{
+		this.name = name;
+		this.age = age;
+	}
+	// TODO Write a method that accepts a supplied reference to a Person object 
+	// TODO and copies the name and age values of this Person to the supplied Person
+	public void PersonCopy(Person p)
+	{
+		p.name = this.name;
+		p.age = this.age;
+	}
+	
+	public static void main(String[] args) {
+		
+		// TODO Create a new Person object and set its name and age
+		Person p = new Person();
+		p.setNameAge("Eashan",21);
+		// TODO Print the name and age of the Person object to the console
+		System.out.println("Hello I am "+ p.getName()+"I am "+p.getAge()+"years old");
+		// TODO Create a second new Person object, and call your "copy" method to copy the
+		// TODO name and age from the first to the second object. Print the name and age of the 
+		// TODO second Person object to the console.
+		Person p1 = new Person();
+		p.PersonCopy(p1);
+		System.out.println("Hello again I am "+ p1.getName()+"I am "+p1.getAge()+"years old");
+
+	}
+
+}

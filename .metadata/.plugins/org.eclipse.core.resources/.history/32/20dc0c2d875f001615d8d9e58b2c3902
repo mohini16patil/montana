@@ -1,0 +1,51 @@
+package student.interfaces;
+
+import java.util.Date;
+
+public class ReservableBook extends Book implements Reservable {
+	
+	private Member reserver;
+	
+	ReservableBook(String title, String author, String isbn, Genre genre)
+	{
+		super( title, author, isbn, genre);
+		this.reserver = null;
+		
+	}
+
+	@Override
+	public boolean isReserved() {
+		return 	(this.reserver != null);
+	}
+
+	@Override
+	public boolean canBeReservedFor(Member mem) {
+		return super.canBeBorrowedBy(mem);
+	}
+
+	@Override
+	public boolean reserveItemFor(Member mem) {
+		// TODO Auto-generated method stub
+		if(super.isBorrowed() && !this.isReserved() && this.canBeReservedFor(mem))
+		{
+			this.reserver = mem;
+			return true;
+		}
+		return false;
+	}
+	
+	@Override
+		public void returnItem(){
+			super.returnItem();
+			if(this.isReserved())
+			{
+				super.borrower = this.reserver;
+				super.dateBorrowed = new Date();
+				this.reserver = null;
+				
+			}
+	}
+	
+	
+
+}

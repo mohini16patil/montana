@@ -1,0 +1,25 @@
+package student.collectionsgenerics;
+
+public class ComparisonMethods implements Comparable<T> {
+
+	// TODO Write a method compare that takes two Comparable values and returns 
+	// TODO the greater of them
+}
+
+	// TODO Write a method compare that takes any two values and a compatible 
+	// TODO Comparator, and uses the Comparator to return the greater of them
+	
+	
+/*	
+    public static void main(String[] args) {
+		// use the natural ordering on ints (ascending numeric)
+		System.out.println("compare works with natural ordering on Integer: " + (compare(2,3) == 3));		
+		System.out.println("compare works with natural ordering on String: " + compare("a1","b").equals("b"));		
+		System.out.println("compare works with ordering by length on String: " + 
+					compare("a1","b", new StringLengthComparator()).equals("a1"));		
+	}
+*/
+}
+
+// TODO write a class StringLengthComparator that orders strings in increasing order of length
+//class StringLengthComparator ...

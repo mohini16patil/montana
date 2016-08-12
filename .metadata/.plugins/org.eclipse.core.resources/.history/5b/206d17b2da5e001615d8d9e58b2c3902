@@ -1,0 +1,16 @@
+package student.inhertance;
+
+// Define your DVD class here, as a subclass of Item.
+enum Genre{
+	Universal,
+	Youth,
+	Adult
+};
+public class DVD extends Item{
+	
+	int playingTime;
+	DVD(String Title, Genre genre, int playingTime){
+		super(Title);
+		
+	}
+}

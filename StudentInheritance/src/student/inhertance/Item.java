@@ -1,0 +1,58 @@
+package student.inhertance;
+
+import java.util.Date;
+// Define your Item class here, as an abstract class.
+
+public abstract class Item {
+
+	protected String Title;
+	protected Date dateBorrowed;
+	private Member currentBorrower;
+
+	Item(String Title) {
+		this.Title = Title;
+		this.dateBorrowed = null;
+		this.currentBorrower = null;
+	}
+
+	public boolean isBorrowed() {
+		return (this.currentBorrower != null);
+	}
+
+	public boolean canBeBorrowedBy(Member mem) {
+		return true;
+	}
+
+	public boolean borrowItemBy(Member mem) {
+		if(!this.isBorrowed())
+		{
+			if(this.canBeBorrowedBy(mem))
+			{
+				mem.borrowedItem();
+				this.currentBorrower = mem;
+				this.dateBorrowed = new Date();
+				return true;
+			}
+			return false;
+		}
+		return false;
+
+	}
+	
+	public String toString()
+	{
+		StringBuilder rep = new StringBuilder();
+		rep.append("Title:"+this.Title);
+		if(this.isBorrowed())
+		{
+			rep.append("\n This item is borrowed by " + this.currentBorrower.getName());
+			rep.append("Borrowing datetime :"+this.dateBorrowed.toString());
+				
+		}
+		else{
+		rep.append("\n This item isn't borrowed currently and is available");
+		}
+		return rep.toString();
+
+	}
+}

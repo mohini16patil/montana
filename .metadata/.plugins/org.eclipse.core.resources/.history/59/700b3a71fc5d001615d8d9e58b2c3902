@@ -1,0 +1,35 @@
+package student.classes;
+
+import java.util.*;
+// Write your Employee class here.
+
+public class Employee{
+	
+	private String name;
+	private Long salary;
+	private Date joiningDate;
+	
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	public void setSalary(long salary)
+	{
+		this.salary = salary;
+	}
+	public String getName()
+	{
+		return this.name;
+	}
+	
+	public long getSalary()
+	{
+		return this.salary;
+	}
+	
+	public String EmptoString()
+	{
+		return (this.toString());
+	}
+	
+}

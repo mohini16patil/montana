@@ -1,0 +1,10 @@
+
+public class Board {
+	int x, y;
+
+	public void Board(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+
+}

@@ -1,0 +1,7 @@
+package student.collectionsgenerics;
+
+public class Pair<F,S> {
+	
+	// Write your Pair class here. Add a main method to test it with different types
+	
+}

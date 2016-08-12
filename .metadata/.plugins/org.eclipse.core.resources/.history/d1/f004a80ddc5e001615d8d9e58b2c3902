@@ -1,0 +1,38 @@
+package student.inhertance;
+
+// Define your DVD class here, as a subclass of Item.
+enum Genre {
+	Universal, Youth, Adult
+};
+
+public class DVD extends Item {
+
+	int playingTime;
+	Genre genre;
+
+	DVD(String Title, Genre genre, int playingTime) {
+		super(Title);
+		this.playingTime = playingTime;
+		this.genre = genre;
+	}
+
+	@override
+	public boolean canBeBorrowedBy(Member mem) {
+		if (this.genre == Genre.Youth && mem.getAge() < 12)
+			return false;
+		if (this.genre == Genre.Adult && mem.getAge() < 18)
+			return false;
+		return true;
+	}
+	
+	@override
+	public String toString()
+	{
+		StringBuilder ret = new StringBuilder();
+		ret.append(super.toString());
+		ret.append("\n Genre: "+ this.genre);
+		ret.append("/n Playing time :"+ this.playingTime);
+		
+		return ret.toString();
+	}
+}

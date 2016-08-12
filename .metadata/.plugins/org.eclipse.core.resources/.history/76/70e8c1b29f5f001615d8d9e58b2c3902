@@ -1,0 +1,38 @@
+package student.collectionsgenerics;
+
+public class Pair<F,S> {
+	
+	// Write your Pair class here. Add a main method to test it with different types
+	
+	F pair1;
+	S pair2;
+	
+	Pair(F pair1, S pair2){
+		this.pair1 = pair1;
+		this.pair2 = pair2;
+		
+	}
+
+	public F getPair1() {
+		return pair1;
+	}
+
+	public void setPair1(F pair1) {
+		this.pair1 = pair1;
+	}
+
+	public S getPair2() {
+		return pair2;
+	}
+
+	public void setPair2(S pair2) {
+		this.pair2 = pair2;
+	}
+	
+	public static void  main(String [] args)
+	{
+		Pair p = new Pair("Eashan",2);
+		System.out.println(p.getPair1() +""+ p.getPair2());
+	}
+	
+}

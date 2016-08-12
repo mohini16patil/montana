@@ -1,0 +1,29 @@
+package student.additionaljavaseclasses;
+
+
+public class UsingStringBuilder {
+
+	public static void main(String[] args) {
+		
+		// Write code here, to explore the capabilities of the StringBuilder class.
+		StringBuilder sb = new StringBuilder(50);
+		sb.append("Hello I am appending this text, hope this worlks well , and I am Ironman");
+		System.out.println(sb.toString());
+		sb.delete(0,5 );
+		System.out.println(sb.toString());
+		sb.deleteCharAt(0);
+		System.out.println(sb.toString());
+		sb.insert(0, "Hello ");
+		System.out.println(sb.toString());
+		sb.replace(5,6, " We ");
+		System.out.println(sb.toString());
+		sb.setCharAt(0, 'I');
+		System.out.println(sb.toString());
+		sb.reverse();
+		System.out.println(sb.toString());
+
+
+
+
+	}
+}
